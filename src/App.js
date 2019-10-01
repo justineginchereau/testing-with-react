@@ -9,13 +9,27 @@ import "./app.scss";
 
 // export default App;
 
+const tempArr = [
+  {
+    firstName: "Joe",
+    lastName: "Shmo",
+    email: "joes@gmail.com",
+    age: 26,
+    onlineStatus: true
+  }
+];
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
         <section className="main">
-          <Headline header="Posts" desc="Click the button to render posts" />
+          <Headline
+            header="Posts"
+            desc="Click the button to render posts"
+            tempArr={tempArr}
+          />
         </section>
       </div>
     );
